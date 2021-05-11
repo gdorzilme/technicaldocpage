@@ -46,15 +46,7 @@
                         </p>
                     <p> The year 2004 saw a massive surge of interest in Ruby, 
                         with the introduction of the Ruby on Rails Web application framework by David Heinemeier Hansson.</p> 
-                    <code>
-                        test 
-                    </code>
-
-                    <ul>
-                        <li>one</li>
-                        <li> two</li>
-                        <li> two</li>
-                    </ul>
+                    
                 </article>
             </section> 
         
@@ -62,56 +54,77 @@
             <section class="main-section" id="Installation">
                 <header><h1>Installation</h1> </header>
                 <article>
-                    <p>Ruby       </p>
-                    <p> The year 2004 saw a massive surge of interest in Ruby, 
-                        with the introduction of the Ruby on Rails Web application framework by David Heinemeier Hansson.</p> 
-                    <code>
-                        test 
-                    </code>
+                    <p>Ruby as an open source language, has been ported to run on many different computer platforms and architectures.
+                       This means that if you develop a Ruby program on one machine, it's likely you'll be able to run it without any changes on a different machine. 
+                    </p> 
+                    <p> There are multiple ways to install and manage Ruby. If you are on Windows, the simplest way to get Ruby installed is by using the 
+                        <a href="https://rubyinstaller.org/">Ruby Installer for Windows</a> Download the latest version of Ruby 2. 
+                        After you have downloaded this, double-click this file and install Ruby on your PC, accepting all the defaults. After you have installed your Ruby software, 
+                        the System Environment Variable path is already set to point to the bin folder of Ruby.
+                        If you're using a UNIX-like system like Linux or Mac OS X, you can either use <b>rbenv</b> with <b>ruby-build</b> or <b>RVM</b> or <b>chruby</b>.</p> 
+                    
+                        
 
-                    <ul>
-                        <li>one</li>
-                        <li> two</li>
-                        <li> two</li>
-                    </ul>
                 </article>
             </section> 
 
             <!--Ruby Features -->
              <section class="main-section" id="Features">
-                <header><h1>Ruby Features</h1> </header>
+                <header><h1> Features</h1> </header>
                 <article>
-                    <p>Ruby       </p>
-                    <p> The year 2004 saw a massive surge of interest in Ruby, 
-                        with the introduction of the Ruby on Rails Web application framework by David Heinemeier Hansson.</p> 
-                    <code>
-                        test 
-                    </code>
+                    <h3>Some of the main features of Ruby are:</h3>
+                    <ol>
+                        <li><b>Free format</b> - You can start writing your program from any line and column </li>
+                        <li><b>Case sensitive </b> - Lowercase letters and uppercase letters are distinct. The keyword <b>end</b>, for example, is completely different from the keyword <b>END</b>. </li>
+                        <li><b>Comments</b> - Anything following an unquoted #, to the end of the line on which it appears, is ignored by the interpreter. Also, to facilitate large comment blocks, 
+                            the ruby interpreter also ignores anything between a line starting with =begin and another line starting with =end. This only works if the = signs are the first characters of each line. </li>
+                        <li><b>Statement delimiters</b> - Multiple statements on one line must be separated by semicolons, but they are not required at the end of a line; a linefeed is treated like a semicolon. \
+                            If a line ends with a backslash (\), the linefeed following it is ignored; this allows you to have a single logical line that spans several lines.  </li>
+                        <li><b><u>Keywords</u></b> - Also known as reserved words (around 42 of them) in Ruby typically cannot be used for other purposes. You may be used to thinking that a false value may be represented as a zero, 
+                            a null string, a null character, or various other things. But in Ruby, all of these *values* are true; in fact, everything is true except the reserved words <b>false</b> and <b>nil</b>. 
+                            Keywords would be called "reserved words" in most languages and they would never be allowed as identifiers. The Ruby parser is flexible and does not complain if you prefix these keywords with @, @@ or $ prefixes, 
+                            or sigils, and use them as instance, class or global variable names, respectively. The best practice is to treat these keywords as reserved. </li>
+                    </ol>
+                    
+                    <h3>Other notable features of Ruby include:</h3>
 
                     <ul>
-                        <li>one</li>
-                        <li> two</li>
-                        <li> two</li>
+                        <li>Everything is an expression (even statements) and everything is executed imperatively (even declarations)</li>
+                        <li> Lexical closures, iterators and generators, with a block syntax </li>
+                        <li> Literal notation for arrays, hashes, regular expressions and symbols</li>
+                        <li> Built-in support for rational numbers, complex numbers and arbitrary-precision arithmetic</li> 
+                        <li> Centralized package management through RubyGems</li> 
+                        <li> Implemented on all major platforms</li>
+
                     </ul>
                 </article>
             </section> 
 
             <!--Simple Ruby Hello Program-->
             <section class="main-section" id="Hello_Program">
-                <header><h1>Write your first Ruby Program "Hello"</h1> </header>
+                <header><h1> Hello Program</h1> </header>
                 <article>
-                    <p>Ruby       </p>
-                    <p> The year 2004 saw a massive surge of interest in Ruby, 
-                        with the introduction of the Ruby on Rails Web application framework by David Heinemeier Hansson.</p> 
+                    <p>When creating your first Ruby program ensure your editor's Tab is set to 2 spaces </p>
+                   
+                    <p> Create a folder named, say. rubyprograms. We shall store all our programs in this folder. 
+                        Our first program will display the string 'Hello' on the command window and the name of the program will be say p001hello.rb</p> 
+                    
+                    <p>Type the following in your editor:</p>
+                    
                     <code>
-                        test 
+                        #p001hello.rb <br>
+                        puts 'Hello' 
                     </code>
 
-                    <ul>
-                        <li>one</li>
-                        <li> two</li>
-                        <li> two</li>
-                    </ul>
+                    <p> and then click File/Save As... Give the name <b>p001hello.rb</b> and store it in your rubyprograms folder. </p>
+
+                    <p>To run your program, open a command window and type <b>ruby p001hello.rb</b> as shown below:</p>
+
+                    <code>
+                        c:\rubyprograms> ruby p001hello.rb  <br>
+                        Hello <br>
+                        c:\rubyprograms> 
+                    </code>
                 </article>
             </section> 
 
@@ -119,18 +132,35 @@
              <section class="main-section" id="Strings">
                 <header><h1>Strings</h1> </header>
                 <article>
-                    <p>Ruby       </p>
-                    <p> The year 2004 saw a massive surge of interest in Ruby, 
-                        with the introduction of the Ruby on Rails Web application framework by David Heinemeier Hansson.</p> 
+                    <p> String literals are sequences of characters between single or double quotation marks.
+                    '' (ie. two single quotes) does not have anything in it at all; we call that an empty string. </p>
+                    
+                    <p> Here's a sample program <b>p003rubystrings.rb</b> that explores how strings work in Ruby:</p> 
+
                     <code>
-                        test 
+                        test# p003rubystrings.rb  <br>
+                        =begin  <br>
+                        Ruby Strings <br> 
+                        In Ruby, strings are, by default, mutable  <br>
+                        =end  <br>
+                        <br>
+                        puts "Hello World"  <br>
+                        # Can use " or ' for Strings, but ' is more efficient  <br>
+                        puts 'Hello World'  <br>
+                        # String concatenation  <br>
+                        puts 'I like' + ' Ruby'  <br>
+                        # Escape sequence  <br>
+                        puts 'It\'s my Ruby'  <br>
+                        # New here, displays the string three times  <br>
+                        puts 'Hello' * 3  <br>
+                        # Defining a constant  <br>
+                        # More on Constants later, here  <br>
+                        # /satishtalim/ruby_names.html <br> 
+                        PI = 3.1416  <br>
+                        puts PI  <br>
                     </code>
 
-                    <ul>
-                        <li>one</li>
-                        <li> two</li>
-                        <li> two</li>
-                    </ul>
+                     
                 </article>
             </section> 
 
@@ -139,37 +169,34 @@
              <section class="main-section" id="Variables_and_Assignment">
                 <header><h1>Variables and Assignment</h1> </header>
                 <article>
-                    <p>Ruby       </p>
-                    <p> The year 2004 saw a massive surge of interest in Ruby, 
-                        with the introduction of the Ruby on Rails Web application framework by David Heinemeier Hansson.</p> 
+                    <p> To store a number or a string in your computer's memory for use later in your program, you need to give the number or string a name. 
+                        Programmers often refer to this process as assignment and they call the names variables. 
+                        A variable springs into existence as soon as the interpreter sees an assignment to that variable. </p>
+                    
                     <code>
-                        test 
+                        s = 'Hello World' <br>
+                        x = 10 
                     </code>
 
-                    <ul>
-                        <li>one</li>
-                        <li> two</li>
-                        <li> two</li>
-                    </ul>
+                    
                 </article>
             </section> 
 
             <!--Ruby Access Control -->
              <section class="main-section" id="Ruby_Access_Control">
                 <header><h1>Ruby Access Control</h1> </header>
+                
                 <article>
-                    <p>Ruby       </p>
-                    <p> The year 2004 saw a massive surge of interest in Ruby, 
-                        with the introduction of the Ruby on Rails Web application framework by David Heinemeier Hansson.</p> 
-                    <code>
-                        test 
-                    </code>
-
-                    <ul>
-                        <li>one</li>
-                        <li> two</li>
-                        <li> two</li>
-                    </ul>
+                    <p>Ruby provides three levels of protection: </p>
+                    
+                    <ol>
+                        <li> <b>Public</b> methods can be called by everyone - no access control is enforced. A class's instance methods (these do not belong only to one object; 
+                            instead, every instance of the class can call them) are public by default; anyone can call them. The <b>initialize</b> method is always private.</li>
+                        <li> <b>Protected</b>methods can be invoked only by objects of the defining class and its subclasses. Access is kept within the family. 
+                                However, usage of <b>protected</b> is limited. </li>
+                        <li><b>Private</b> methods cannot be called with an explicit receiver - the receiver is always <b>self</b>. This means that private methods can be called only in the context of the current object; 
+                            you cannot invoke another object's private methods.</li>
+                    </ol>
                 </article>
             </section> 
 
@@ -177,18 +204,17 @@
              <section class="main-section" id="Regular_Expressions">
                 <header><h1>Regular Expressions</h1> </header>
                 <article>
-                    <p>Ruby       </p>
-                    <p> The year 2004 saw a massive surge of interest in Ruby, 
-                        with the introduction of the Ruby on Rails Web application framework by David Heinemeier Hansson.</p> 
-                    <code>
-                        test 
-                    </code>
+                    <p><b>A regular expression is simply a way of specifying a pattern of characters to be matched in a string. </b>
+                        In Ruby, you typically create a regular expression by writing a pattern between slash characters (/pattern/). 
+                        In Ruby, regular expressions are objects (of type Regexp) and can be manipulated as such. // is a regular expression and an instance of the <b>Regexp</b> class </p>
+                    
+                   <p>Here's a code example of a regular expression in Ruby</p>
 
-                    <ul>
-                        <li>one</li>
-                        <li> two</li>
-                        <li> two</li>
-                    </ul>
+                   <code>
+                        // .class #Regexp <br>
+                        
+                    </code> 
+
                 </article>
             </section> 
 
@@ -197,17 +223,10 @@
              <section class="main-section" id="References">
                 <header><h1>References</h1> </header>
                 <article>
-                    <p>Ruby       </p>
-                    <p> The year 2004 saw a massive surge of interest in Ruby, 
-                        with the introduction of the Ruby on Rails Web application framework by David Heinemeier Hansson.</p> 
-                    <code>
-                        test 
-                    </code>
-
+                    
                     <ul>
-                        <li>one</li>
-                        <li> two</li>
-                        <li> two</li>
+                        <li>All the documentation from this page is taken from <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)#Philosophy">Wikipedia</a> and <a href="http://rubylearning.com/satishtalim/tutorial.html">Ruby Learning.com</a> </li>
+                        
                     </ul>
                 </article>
             </section> 
